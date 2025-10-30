@@ -1,0 +1,43 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightpink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+    color: rgb(205, 7, 7);
+}
+
+.img-container {
+    margin: 3rem 0;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10rem;
+    row-gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+}
